@@ -164,6 +164,14 @@ function velvet_theme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'velvet_theme_scripts' );
 
+function velvet_register_menus() {
+  register_nav_menus([
+    'main-menu' => __('Menu principal', 'velvet-theme'),
+  ]);
+}
+add_action('after_setup_theme', 'velvet_register_menus');
+
+
 /**
  * Implement the Custom Header feature.
  */
