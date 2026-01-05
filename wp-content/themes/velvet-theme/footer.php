@@ -2,36 +2,35 @@
 /**
  * The template for displaying the footer
  *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
  * @package velvet-theme
  */
-
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'velvet-theme' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'velvet-theme' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'velvet-theme' ), 'velvet-theme', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+    </div><!-- #content -->
+
+    <footer id="colophon" class="site-footer">
+        <div class="footer-widgets">
+            <!-- Colonne 1 : Politique de confidentialité -->
+            <div class="footer-column">
+                <a href="<?php echo esc_url( home_url('/politique-de-confidentialite') ); ?>">Politique de confidentialité</a>
+            </div>
+
+            <!-- Colonne 2 : Copyright -->
+            <div class="footer-column">
+                &copy; <?php echo date('Y'); ?> velvetcompany
+            </div>
+
+            <!-- Colonne 3 : Instagram -->
+            <div class="footer-column">
+                <a href="https://instagram.com/COMPTE_CLIENT" target="_blank" rel="noopener">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram-logo.png" alt="Instagram Velvet Company" class="instagram-logo">
+                </a>
+            </div>
+        </div><!-- .footer-widgets -->
+    </footer><!-- #colophon -->
+
 </div><!-- #page -->
 
-
-
-</div>
 <?php wp_footer(); ?>
-
 </body>
 </html>

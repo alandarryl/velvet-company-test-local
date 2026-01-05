@@ -119,3 +119,48 @@ header image */
 }
 
 
+/* footer css */
+
+
+
+.site-footer {
+    background-color: var(--velvet-red); /* rouge de la maquette */
+    color: #fff;
+    padding: 30px 20px;
+    height: 100%;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+.footer-widgets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.instagram-logo {
+    width: 30px;
+    height: 30px;
+}
+
+
