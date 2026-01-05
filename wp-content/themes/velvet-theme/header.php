@@ -21,7 +21,12 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<div class="site-wrapper">
+
+
 <?php wp_body_open(); ?>
+
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'velvet-theme' ); ?></a>
 
