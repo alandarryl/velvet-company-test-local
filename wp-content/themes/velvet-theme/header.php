@@ -30,14 +30,32 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'velvet-theme' ); ?></a>
 
-	<header id="masthead" class="site-header">
+<header class="site-header">
+	<div class="header-inner">
+
+		<!-- <div class="header-title">
+		<h1>VELVET COMPANY</h1>
+		</div> -->
+
+		<div class="header-title">
+			<h1 class="site-title">
+				<span>VELVET</span>
+				<span>COMPANY</span>
+			</h1>
+		</div>
+
+		
+
+
 		<nav class="main-navigation">
-			<?php
-				wp_nav_menu([
-				'theme_location' => 'main-menu',
-				'container' => false,
-				]);
-			?>
+		<?php
+			wp_nav_menu([
+			'theme_location' => 'main-menu',
+			'container' => false,
+			]);
+		?>
 		</nav>
 
-	</header><!-- #masthead -->
+	</div>
+</header>
+
