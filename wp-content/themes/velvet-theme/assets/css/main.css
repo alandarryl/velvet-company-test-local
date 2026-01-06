@@ -256,7 +256,14 @@ header image */
 
 .company-title h1 {
     font-size: 3rem;
+    color: var(--text-color);
 }
+
+/* .company-title h1{
+    font-size: 72px;
+    color: #FBF6F6;
+    text-align: center;
+} */
 
 .company-image img {
     width: 100%;
@@ -272,11 +279,15 @@ header image */
 
 .company-members h2 {
     margin-bottom: 1rem;
+    color: var(--text-color);
 }
 
 .company-members p {
-    max-width: 700px;
-    margin: 0 auto 4rem;
+    /* max-width: 700px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* margin: 0 auto 4rem; */
+    color: var(--text-color);
 }
 
 .members-grid {
@@ -302,6 +313,7 @@ header image */
 
 .member-card span {
     margin-top: 0.75rem;
-    font-size: 0.9rem;
+    font-size: 20px;
+    color: var(--text-color);
 }
 
