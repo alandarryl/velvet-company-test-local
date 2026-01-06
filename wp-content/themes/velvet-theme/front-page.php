@@ -7,6 +7,10 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/media/hero.jpg" alt="Velvet Company">
     </section>
 
+    	<div class="header-cta">
+			<a href="#" class="btn primary">DECOUVREZ NOS PROJETS</a>
+		</div>
+
         <!-- INTRO -->
     <section class="home-intro">
         <h2>Qui Sommes Nous ?</h2>
@@ -18,8 +22,8 @@
     </section>
 
     <!-- VIDEOS -->
+    <h2 class="vid-title" >Dernières prestations</h2>
     <section class="home-videos">
-        <h2>Dernières prestations</h2>
         <div class="video">Vidéo 1</div>
         <div class="video">Vidéo 2</div>
     </section>

@@ -54,10 +54,6 @@
 		?>
 		</nav>
 
-		<div class="header-cta">
-			<a href="#" class="btn primary">Découvrir nos projets</a>
-		</div>
-
 	</div>
 </header>
 

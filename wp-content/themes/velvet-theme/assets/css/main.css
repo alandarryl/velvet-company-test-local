@@ -1,6 +1,7 @@
 :root {
     --velvet-red: #430100;
     --velvet-background: #1A1818;
+    --text-color: #FBF6F6;
 }
 
 body {
@@ -134,6 +135,17 @@ header image */
     z-index: 20;
 }
 
+.header-cta .btn.primary{
+    background: var(--text-color);
+    color: var(--velvet-red);
+    padding: 20px 55px;
+    font-size: 30px;
+    font-weight: 700;
+    /* width: 200px;
+    height: 100px; */
+    border-radius: 8px;
+    text-decoration: none;
+}
 
 /* footer css */
 
@@ -161,14 +173,75 @@ header image */
 /* HOME PAGE  */
 
 .home-intro {
-    max-width: 800px;
+    /* max-width: 800px; */
+    padding: 30px 25px;
     margin: 6rem auto;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .home-intro h2 {
     margin-bottom: 1rem;
+    font-size: 32px;
+    color: var(--text-color);
+}
+
+.home-intro p{
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+.vid-title{
+    color: var(--text-color);
+    margin-left: 30px;
+    font-size: 32px;
+}
+
+.home-videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.video {
+    background: #000;
+    height: 440px;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.dot {
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background: #FBF6F6;
+    border: 1px solid var(--velvet-red);
+}
+
+.dot.active {
+    background-color: var(--velvet-red);
 }
 
 
+.home-cta {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.btn.secondary {
+    background: var(--text-color);
+    color: var(--velvet-red);
+    padding: 20px 55px;
+    font-size: 30px;
+    font-weight: 700;
+    /* width: 200px;
+    height: 100px; */
+    border-radius: 8px;
+    text-decoration: none;
+}
 
