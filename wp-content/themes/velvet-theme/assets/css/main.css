@@ -1,11 +1,19 @@
 :root {
     --velvet-red: #430100;
+    --velvet-background: #1A1818;
+}
+
+body {
+    background-color: var(--velvet-background);
 }
 
 
 /* .site-header {
     width: 100%;
 } */
+
+
+/* HEADER */
 
 .site-header {
     position: absolute;
@@ -118,49 +126,49 @@ header image */
     object-fit: cover;
 }
 
+.header-cta {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+
 
 /* footer css */
 
 
-
 .site-footer {
-    background-color: var(--velvet-red); /* rouge de la maquette */
-    color: #fff;
-    padding: 30px 20px;
-    height: 100%;
-    margin-bottom: 0;
-    margin-top: 50px;
+    background-color: var(--velvet-red);
 }
 
-.footer-widgets {
-    display: flex;
-    justify-content: space-between;
+.footer-inner {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+}
+
+.site-footer a,
+.site-footer span {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+/* HOME PAGE  */
+
+.home-intro {
+    max-width: 800px;
+    margin: 6rem auto;
     text-align: center;
 }
 
-.footer-column {
-    flex: 1;
-    min-width: 150px;
+.home-intro h2 {
+    margin-bottom: 1rem;
 }
 
-.footer-column a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.footer-column a:hover {
-    text-decoration: underline;
-}
-
-.instagram-logo {
-    width: 30px;
-    height: 30px;
-}
 
 
