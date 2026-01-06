@@ -35,8 +35,8 @@ get_header();
         <p>Pour toute demande de booking ou d'information.</p>
 
         <div class="contact-details">
-          <p>📧 projetdigitalcampus@gmail.com</p>
-          <p>📞 06 00 00 00 00</p>
+          <p> projetdigitalcampus@gmail.com</p>
+          <p> 06 00 00 00 00</p>
         </div>
       </div>
 
