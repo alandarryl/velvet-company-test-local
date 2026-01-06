@@ -354,7 +354,96 @@ header image */
 
 .prestation-media {
     background-color: #ccc;
+    height: 400px;
+}
+
+
+/* PAGE BOOKING */
+
+.booking-calendar {
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.day {
+    background: #fff;
     height: 300px;
+    padding-top: 1rem;
+    color: red;
+    font-weight: bold;
+}
+
+.booking-contact {
+    padding: 6rem 2rem;
+}
+
+.booking-contact h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.contact-info img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.contact-details p {
+    margin-top: 0.5rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.form-row.two {
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-row.three {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    background: var(--text-color);
+    color: var(--velvet-red);
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
 }
 
 
