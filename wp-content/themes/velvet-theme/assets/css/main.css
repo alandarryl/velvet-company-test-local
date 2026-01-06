@@ -317,3 +317,45 @@ header image */
     color: var(--text-color);
 }
 
+
+/* PAGE PRESTATION */
+
+.prestations-title {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.prestations-title {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.prestations-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+    margin-bottom: 6rem;
+}
+
+.prestations-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding: 0 2rem 6rem;
+}
+
+.prestation-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.prestation-media {
+    background-color: #ccc;
+    height: 300px;
+}
+
+
+
