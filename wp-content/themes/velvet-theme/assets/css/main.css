@@ -2,6 +2,7 @@
     --velvet-red: #430100;
     --velvet-background: #1A1818;
     --text-color: #FBF6F6;
+    --navbar-color: #958484;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 10;
+    background-color: var(--navbar-color);
 }
 
 .header-inner {
@@ -53,14 +55,6 @@ body {
     color: #FBF6F6;
 }
 
-
-/* .header-title h1 {
-    margin: 0;
-    font-size: 52px;
-    font-weight: bold;
-    line-height: 51px;
-    letter-spacing: 0.2em;
-} */
 
 .main-navigation ul {
     display: grid;
@@ -446,5 +440,6 @@ header image */
     cursor: pointer;
 }
 
+/* RESPONSIVE PART  */
 
 
