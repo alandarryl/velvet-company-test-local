@@ -104,6 +104,12 @@ body {
     text-decoration: none;
 }
 
+.mobile-nav .current-menu-item > a,
+.mobile-nav .current_page_item > a {
+    color: var(--selected-navbar-color);
+}
+
+
 
 /* --- Mobile --- */
 

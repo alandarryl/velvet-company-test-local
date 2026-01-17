@@ -25,41 +25,41 @@ get_header();
         <div class="contact-container">
 
         <!-- formulaire de contact -->
-        <form class="contact-form">
+        <form class="contact-form" method="POST" action="">
 
             <div class="you-are">
                 <label for="you-are">Vous êtes :</label>
-                <input type="checkbox" id="you-are" name="you-are" value="particulier" >
-                <label for="you-are">Particulier</label>
-                <input type="checkbox" id="you-are" name="you-are" value="professionnel">
-                <label for="you-are">Professionnel</label>
+                <input type="radio" name="you-are" value="particulier" id="particulier">
+                <label for="particulier">Particulier</label>
+                <input type="radio" name="you-are" value="professionnel" id="professionnel">
+                <label for="professionnel">Professionnel</label>
             </div>
 
             <div class="form-row two">
-            <input type="text" placeholder="Nom">
-            <input type="text" placeholder="Prénom">
+            <input type="text" name="nom" placeholder="Nom">
+            <input type="text" name="prenom" placeholder="Prénom">
             </div>
 
             <div class="form-row">
-            <input type="text" placeholder="Type de demande / Type d'événement">
+            <input type="text" name="type-demande" placeholder="Type de demande / Type d'événement">
             </div>
 
             <div class="form-row three">
-            <input type="text" placeholder="Jour">
-            <input type="text" placeholder="Mois">
-            <input type="text" placeholder="Année">
+            <input type="text" name="jour" placeholder="Jour">
+            <input type="text" name="mois" placeholder="Mois">
+            <input type="text" name="annee" placeholder="Année">
             </div>
 
             <div class="form-row">
-            <input type="tel" placeholder="Numéro de téléphone">
+            <input type="tel" name="telephone" placeholder="Numéro de téléphone">
             </div>
 
             <div class="form-row">
-            <input type="email" placeholder="Adresse mail">
+            <input type="email" name="email" placeholder="Adresse mail">
             </div>
 
             <div class="form-row">
-            <textarea placeholder="Message libre (optionnel)"></textarea>
+            <textarea name="message" placeholder="Message libre (optionnel)"></textarea>
             </div>
 
             <div class="form-row button-row">
