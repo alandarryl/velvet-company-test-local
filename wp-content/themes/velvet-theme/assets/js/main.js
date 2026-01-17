@@ -1,6 +1,11 @@
-const burger = document.querySelector('.burger');
-const mobileMenu = document.querySelector('.mobile-menu');
+document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.menu-burger');
+    const mobileNav = document.querySelector('.mobile-nav');
 
-burger.addEventListener('click', () => {
-  mobileMenu.classList.toggle('active');
+    if (!burger || !mobileNav) return;
+
+    burger.addEventListener('click', () => {
+        mobileNav.classList.toggle('open');
+        console.log('burger clicked');
+    });
 });

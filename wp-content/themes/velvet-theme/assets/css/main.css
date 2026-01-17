@@ -3,6 +3,8 @@
     --velvet-background: #1A1818;
     --text-color: #FBF6F6;
     --navbar-color: #958484;
+    --not-selected-navbar-color: #958484;
+    --selected-navbar-color: #FBF6F6;
 }
 
 body {
@@ -57,11 +59,17 @@ body {
 }
 
 .main-navigation a {
-    color: var(--text-color);
+    color: var(--not-selected-navbar-color);
     text-decoration: none;
     font-size: 21px;
     font-style: bold;
     font-weight: 500;
+}
+
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-ancestor > a {
+    color: var(--selected-navbar-color);
 }
 
 
@@ -74,6 +82,49 @@ body {
     background: none;
     border-radius: 8px;
 }
+
+
+/* --- Desktop (default) --- */
+
+.mobile-nav {
+    display: none;        /* ← IMPORTANT */
+}
+
+.mobile-nav .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.5rem 1rem;
+    list-style: none;
+}
+
+.mobile-nav .menu a {
+    color: var(--text-color);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+/* --- Mobile --- */
+
+@media (max-width: 768px) {
+
+    .mobile-nav {
+        display: none; /* fermé par défaut */
+        background: var(--velvet-background);
+        width: 100%;
+    }
+
+    .mobile-nav.open {
+        display: block; /* affiché au click */
+    }
+}
+
+
+
+
+
+
 
 
 /* header responsive */
@@ -101,6 +152,14 @@ body {
     .menu-burger{
         display: block;
     }
+
+    
+    .main-navigation {
+        display: none;
+    }
+
+
+    
 
 }
 

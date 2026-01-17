@@ -40,13 +40,15 @@
 		</h2>
 
 		<nav class="main-navigation">
-		<?php
-			wp_nav_menu([
-			'theme_location' => 'main-menu',
-			'container' => false,
-			]);
-		?>
+			<?php
+				wp_nav_menu([
+					'theme_location' => 'main-menu',
+					'container' => false,
+				]);
+			?>
 		</nav>
+
+
 
 		<button href="<?php echo get_permalink( get_page_by_title('Contact / Booking') ); ?>" class="reserve-btn">
 			Réserver
@@ -60,3 +62,12 @@
 
 	</div>
 </header>
+
+			<div class="mobile-nav ">
+				<?php
+					wp_nav_menu([
+						'theme_location' => 'main-menu',
+						'container' => false,
+					]);
+				?>
+			</div>
