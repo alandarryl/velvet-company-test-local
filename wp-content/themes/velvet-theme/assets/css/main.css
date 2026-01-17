@@ -14,6 +14,61 @@ body {
 /* HEADER */
 
 
+.site-header {
+    background: #1A1818;
+    padding: 0.5rem 1rem;
+    color: var(--text-color);
+}
+
+.header-inner {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.site-branding {
+    font-size: 30px;
+    line-height: 1.1;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-navigation{
+    margin-left: 70px;
+}
+
+.main-navigation ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.main-navigation a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 21px;
+    font-style: bold;
+    font-weight: 500;
+}
+
+
+.reserve-btn {
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    padding: .5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    background: none;
+    border-radius: 8px;
+}
+
+
+
+
+
 
 /* 
 header image */

@@ -30,17 +30,14 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'velvet-theme' ); ?></a>
 
+
 <header class="site-header">
 	<div class="header-inner">
 
-	<div class="left-side" >
-		<div class="header-title">
-			<h1 class="site-title">
-				<span>VELVET</span>
-				<span>COMPANY</span>
-			</h1>
-		</div>
-
+		<h2 class="site-branding">
+			<span>VELVET</span>
+			<span>COMPANY</span>
+		</h2>
 
 		<nav class="main-navigation">
 		<?php
@@ -50,13 +47,10 @@
 			]);
 		?>
 		</nav>
-	</div>
 
-		<a href="<?php echo esc_url( home_url( '/wp-content/themes/velvet-theme/page-booking.php' ) ); ?>" class="reserve-button">
+		<button href="<?php echo get_permalink( get_page_by_title('Contact / Booking') ); ?>" class="reserve-btn">
 			Réserver
-		</a>
-
+		</button>
 
 	</div>
 </header>
-
