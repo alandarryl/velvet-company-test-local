@@ -66,6 +66,20 @@ body {
 }
 
 
+@media (max-width: 768px) {
+    .header-inner {
+        grid-template-columns: auto 1fr;
+    }
+
+    .reserve-btn {
+        display: none;
+    }
+
+    .main-navigation {
+        display: none;
+    }
+}
+
 
 
 
@@ -270,11 +284,46 @@ header image */
 
 /* sections derniers projets   */
 
+.section-pres {
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.section-pres h2 {
+    width: 100%;
+    text-align: left;
+    font-size: 32px;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+}
+
 .image-pres {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    justify-content: center;
-    margin: 4rem 0;
+    margin: 2rem 0;
+    padding: 0 2rem;
+
+}
+
+.image-pres .pres-left-image,
+.image-pres .pres-right-image {
+    height: 450px;
+    overflow: hidden;
+    margin-bottom: 45px;
+}
+
+.section-pres .btn{
+    margin-top: 450px;
+    background: var(--text-color);
+    color: var(--velvet-red);
+    padding: 20px 55px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 

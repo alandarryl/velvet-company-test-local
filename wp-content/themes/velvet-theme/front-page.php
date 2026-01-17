@@ -63,17 +63,17 @@
         </div>
     </section> -->
 
-    <section>
+    <section class="section-pres" >
         <h2>Dernières prestations</h2>
         <div class="image-pres" >
             <div class="pres-left-image" >
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/media/pres1.jpg" alt="Prestation 1">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/company-members.png" alt="Prestation 1">
             </div>
             <div class="pres-right-image" >
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/media/pres2.jpg" alt="Prestation 2">
+                <img src="<?php echo get_template_directory_uri(); ?>//assets/media/members/company-members.png" alt="Prestation 2">
             </div>
         </div>
-        <a href="#" class="btn secondary">EN SAVOIR PLUS</a>
+        <a href="#" class="btn primary">EN SAVOIR PLUS</a>
     </section>
 
     <div  class="scroll-up">
