@@ -336,25 +336,44 @@ header image */
 
 /* PAGE LA COMPAGNIE */
 
-.company-title {
-    height: 40vh;
-    display: grid;
-    place-items: center;
-}
-
 .company-title h1 {
     font-size: 3rem;
     color: var(--text-color);
 }
 
-/* .company-title h1{
-    font-size: 72px;
+.company-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.company-banner img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    display: block;
+}
+
+.company-banner h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
     color: #FBF6F6;
     text-align: center;
-} */
+}
+
+.company-image {
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+}
 
 .company-image img {
-    width: 100%;
+    width: 70%;
     height: 650px;
     object-fit: cover;
     display: block;
@@ -364,6 +383,8 @@ header image */
     text-align: center;
     padding: 6rem 2rem;
 }
+
+
 
 .company-members h2 {
     margin-bottom: 1rem;
@@ -376,6 +397,7 @@ header image */
     margin-bottom: 50px;
     /* margin: 0 auto 4rem; */
     color: var(--text-color);
+    text-align: start;
 }
 
 .members-grid {
@@ -403,6 +425,31 @@ header image */
     margin-top: 0.75rem;
     font-size: 20px;
     color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+
+    .company-banner h2 {
+        font-size: 50px;
+    }
+
+    .company-image img {
+        width: 95%;
+        height: auto;
+    }
+
+    .members-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .member-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .member-card img {
+        height: auto;
+    }
 }
 
 
