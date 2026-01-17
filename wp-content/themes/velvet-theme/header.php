@@ -33,6 +33,7 @@
 <header class="site-header">
 	<div class="header-inner">
 
+	<div class="left-side" >
 		<div class="header-title">
 			<h1 class="site-title">
 				<span>VELVET</span>
@@ -49,6 +50,7 @@
 			]);
 		?>
 		</nav>
+	</div>
 
 		<a href="<?php echo esc_url( home_url( '/wp-content/themes/velvet-theme/page-booking.php' ) ); ?>" class="reserve-button">
 			Réserver

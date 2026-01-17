@@ -7,10 +7,6 @@ get_header();
 
 <main class="company">
 
-    <!-- TITRE -->
-    <section class="company-title">
-        <h1>La compagnie</h1>
-    </section>
     <!-- <h2 class="company-title" >La compagnie</h2> -->
 
     <!-- IMAGE -->
@@ -21,11 +17,19 @@ get_header();
     <!-- MEMBRES -->
     <section class="company-members">
 
-    <p>Velvet Company est une compagnie de danse contemporaine qui explore le mouvement comme un langage sensible, intime et universel. 
-        Fondée autour d’une vision artistique tournée vers l’émotion brute, Velvet Company mêle gestuelle organique, théâtralité et recherche 
-        visuelle afin de créer des œuvres qui résonnent autant dans le corps que dans l’esprit. Chaque création est pensée comme une expérience 
-        immersive où se rencontrent danseurs, scénographes, musiciens et artistes visuels. Ensemble, ils façonnent des univers poétiques qui 
-        questionnent le rapport au temps, à l'identité et à la connexion humaine.</p>
+    <p>
+        Velvet Company est une compagnie de danse contemporaine qui 
+        explore le mouvement comme un langage sensible, intime et 
+        universel. Fondée autour d’une vision artistique tournée vers 
+        l’émotion brute, Velvet Company mêle gestuelle organique, 
+        théâtralité et recherche visuelle afin de créer des œuvres 
+        qui résonnent autant dans le corps que dans l’esprit. 
+        Chaque création est pensée comme une expérience 
+        immersive où se rencontrent danseurs, scénographes, 
+        musiciens et artistes visuels. Ensemble, ils façonnent 
+        des univers poétiques qui questionnent le rapport au temps, 
+        à l'identité et à la connexion humaine.
+    </p>
 
     <h2>Nos membres</h2>
 

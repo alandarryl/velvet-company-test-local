@@ -8,7 +8,7 @@
     </section>
 
     	<div class="header-cta">
-			<a href="#" class="btn primary">DECOUVREZ NOS PROJETS</a>
+			<a href="#" class="btn primary">DECOUVREZ NOTRE UNIVERS</a>
 		</div>
 
         <!-- INTRO -->
@@ -26,7 +26,7 @@
             </a>
         </div>
         <div class="intro-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/media/intro.jpg" alt="Velvet Company Intro">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/company-members.png" alt="Velvet Company Intro">
         </div>
     </section>
 
@@ -61,8 +61,12 @@
     <section>
         <h2>Dernières prestations</h2>
         <div class="image-pres" >
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/media/pres1.jpg" alt="Prestation 1">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/media/pres2.jpg" alt="Prestation 2">
+            <div class="pres-left-image" >
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/media/pres1.jpg" alt="Prestation 1">
+            </div>
+            <div class="pres-right-image" >
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/media/pres2.jpg" alt="Prestation 2">
+            </div>
         </div>
         <a href="#" class="btn secondary">EN SAVOIR PLUS</a>
     </section>

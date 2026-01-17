@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Contact / Booking
+Template Name: Booking
 */
 get_header();
 ?>
