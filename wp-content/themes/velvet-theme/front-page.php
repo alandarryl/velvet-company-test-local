@@ -8,25 +8,30 @@
     </section>
 
     	<div class="header-cta">
+            <h2 class="banner-branding">
+                <span>VELVET</span>
+                <span>COMPANY</span>
+            </h2>
 			<a href="#" class="btn primary">DECOUVREZ NOTRE UNIVERS</a>
 		</div>
 
         <!-- INTRO -->
     <section class="home-intro">
-        <div class="intro-text">
-            <h2>Qui Sommes Nous ?</h2>
-            <p>
-            Velvet Company est une compagnie de danse contemporaine qui crée des univers 
-            sensibles et visuels, où le mouvement raconte des histoires. 
-            Nous imaginons des pièces poétiques et engageantes, pensées 
-            pour toucher chaque spectateur au coeur.
-            </p>
-            <a href="#" class="btn primary">
-                Découvrir la compagnie
-            </a>
-        </div>
-        <div class="intro-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/company-members.png" alt="Velvet Company Intro">
+        <div class="intro-grid" >
+            <div class="intro-text">
+                <h2>Qui Sommes Nous ?</h2>
+                <p>
+                Velvet Company est une compagnie de danse contemporaine qui crée des univers sensibles et visuels, 
+                où le mouvement raconte des histoires. Nous imaginons des pièces poétiques et engageantes, 
+                pensées pour toucher chaque spectateur au coeur.
+                </p>
+                <a href="#" class="btn secondary">
+                    Découvrir la compagnie
+                </a>
+            </div>
+            <div class="intro-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/company-members.png" alt="Velvet Company Intro">
+            </div>
         </div>
     </section>
 

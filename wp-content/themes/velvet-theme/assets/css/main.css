@@ -73,18 +73,6 @@ body {
 /* 
 header image */
 
-/* .hero {
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
-
 .hero {
     height: 100vh;
     position: relative;
@@ -103,16 +91,27 @@ header image */
     left: 50%;
     transform: translateX(-50%);
     z-index: 20;
+    text-align: center;
+}
+
+
+
+.banner-branding{
+    color: var(--text-color);
+    font-size: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header-cta .btn.primary{
+    /* display: flex;
+    justify-content: center; */
     background: var(--text-color);
     color: var(--velvet-red);
     padding: 20px 55px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
-    /* width: 200px;
-    height: 100px; */
     border-radius: 8px;
     text-decoration: none;
 }
@@ -214,6 +213,71 @@ header image */
     border-radius: 8px;
     text-decoration: none;
 }
+
+
+/* PAGE D ACCEUIL */
+
+/* section qui sommes nous  */
+
+.home-intro .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    height: 450px;
+}
+
+.intro-grid .intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.intro-grid .intro-text h2 {
+    font-size: 32px;
+    color: var(--text-color);
+}
+
+.intro-grid .intro-text p {
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+.intro-grid .intro-text .btn.secondary {
+    align-self: flex-start;
+    color: var(--text-color);
+    background: none;
+    border: 1px solid var(--text-color);
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.intro-grid .intro-image{
+    height: 450px;
+    overflow: hidden;
+}
+
+.intro-grid .intro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* sections derniers projets   */
+
+.image-pres {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+
 
 
 /* PAGE LA COMPAGNIE */
