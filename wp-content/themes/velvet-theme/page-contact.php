@@ -12,16 +12,22 @@ get_header();
 
             <!-- IMAGE -->
     <section class="contact-banner">
-        <h2>contact</h2>
+        <h2>CONTACT</h2>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/media/hero.jpg" alt="">
     </section>
 
-        <div class="contact-grid">
+    <a href="#" class="btn secondary dispo-btn">
+        Voir nos disponibilité
+    </a>
+
+    <h2 class="section-title contact-title">Nous Contacter</h2>
+
+        <div class="contact-container">
 
         <!-- formulaire de contact -->
         <form class="contact-form">
 
-            <div>
+            <div class="you-are">
                 <label for="you-are">Vous êtes :</label>
                 <input type="checkbox" id="you-are" name="you-are" value="particulier" >
                 <label for="you-are">Particulier</label>
@@ -56,8 +62,8 @@ get_header();
             <textarea placeholder="Message libre (optionnel)"></textarea>
             </div>
 
-            <div class="form-row">
-            <button type="submit">Envoyer</button>
+            <div class="form-row button-row">
+            <button class="form-btn" type="submit">Envoyer</button>
             </div>
 
         </form>
