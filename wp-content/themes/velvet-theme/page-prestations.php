@@ -8,7 +8,7 @@ get_header();
 <main class="prestations">
 
     <!-- IMAGE -->
-    <section class="prestation-main-image">
+    <section class="prestation-banner">
       <h2>Nos Prestations</h2>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/media/hero.jpg" alt="">
     </section>
@@ -20,17 +20,17 @@ get_header();
   <section class="prestations-categories">
 
     <div class="category-card">
-      <span>Sensuelle</span>
+      <h3>Sensuelle</h3>
       <img src="<?php echo get_template_directory_uri(); ?>/assets/media/sensuelle.jpg" alt="">
     </div>
 
     <div class="category-card">
-      <span>Heels</span>
+      <h3>Heels</h3>
       <img src="<?php echo get_template_directory_uri(); ?>/assets/media/heels.png" alt="">
     </div>
 
     <div class="category-card">
-      <span>Street Jazz</span>
+      <h3>Street Jazz</h3>
       <img src="<?php echo get_template_directory_uri(); ?>/assets/media/street-jazz.jpg" alt="">
     </div>
 
