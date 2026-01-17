@@ -52,5 +52,11 @@
 			Réserver
 		</button>
 
+		<svg class="menu-burger" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M5.25 10.5017H36.75M5.25 21.0017H36.75M5.25 31.5017H36.75" stroke="#FBF6F6" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>
+
+
+
 	</div>
 </header>

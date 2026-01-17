@@ -7,6 +7,7 @@
 
 body {
     background-color: var(--velvet-background);
+    height: 100vh;
 }
 
 
@@ -40,6 +41,15 @@ body {
     margin-left: 70px;
 }
 
+.menu-burger{
+    font-size: 1rem;
+    width: 40px;
+    height: 40px;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
 .main-navigation ul {
     display: flex;
     gap: 2rem;
@@ -66,9 +76,18 @@ body {
 }
 
 
+/* header responsive */
+
 @media (max-width: 768px) {
+
+    .site-branding {
+        font-size: 24px;
+    }
+
     .header-inner {
-        grid-template-columns: auto 1fr;
+        /* grid-template-columns: auto 1fr; */
+        display: flex;
+        justify-content: space-between;
     }
 
     .reserve-btn {
@@ -78,9 +97,22 @@ body {
     .main-navigation {
         display: none;
     }
+
+    .menu-burger{
+        display: block;
+    }
+
 }
 
-
+.scroll-icon{
+    color: var(--text-color);
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
 
 
 
@@ -130,11 +162,23 @@ header image */
     text-decoration: none;
 }
 
+@media (max-width: 768px) {
+    .banner-branding{
+        font-size: 60px;
+    }
+
+    .header-cta .btn.primary{
+        padding: 15px 40px;
+        font-size: 15px;
+    }
+}
+
 /* footer css */
 
 
 .site-footer {
     background-color: var(--velvet-red);
+    padding: 1rem 0;
 }
 
 .footer-inner {
@@ -145,11 +189,24 @@ header image */
     padding: 1.5rem 2rem;
 }
 
+.polit-confid {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
 .site-footer a,
 .site-footer span {
     color: #fff;
     text-decoration: none;
     font-size: 0.9rem;
+}
+
+.insta-icon{
+    color: var(--text-color);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 
 
