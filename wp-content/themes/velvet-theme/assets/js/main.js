@@ -9,3 +9,22 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('burger clicked');
     });
 });
+
+
+// Video play on click
+
+document.addEventListener('DOMContentLoaded', () => {
+    const videos = document.querySelectorAll('.click-video');
+    videos.forEach(video => {
+        video.addEventListener('click', () => {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+    });
+});
+
+
+

@@ -15,7 +15,7 @@ get_header();
     <!-- IMAGE -->
     <section class="company-banner">
         <h2  >LA COMPAGNIE</h2>
-        <video muted loop>
+        <video class="click-video" muted loop>
             <source src="<?php echo get_template_directory_uri(); ?>/assets/media/company.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
