@@ -100,7 +100,7 @@ get_header();
             </div>
 
             <div class="member-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/media/member-alice2.png.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/media/member-alice2.png" alt="">
             </div>
 
         <!-- Duplique cette carte 13 fois -->
