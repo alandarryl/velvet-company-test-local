@@ -12,6 +12,10 @@ get_header();
     <!-- IMAGE -->
     <section class="company-banner">
         <h2  >LA COMPAGNIE</h2>
+        <video muted loop>
+            <source src="<?php echo get_template_directory_uri(); ?>/assets/media/company.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/media/hero.jpg" alt="">
     </section>
 
@@ -43,67 +47,60 @@ get_header();
             <!-- CARTE -->
             <div class="member-card">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/maryse.png" alt="">
-                <span>Nom du membre</span>
             </div>
 
             <div class="member-card">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/nolwenn.png" alt="">
-                <span>Nom du membre</span>
             </div>
 
             <div class="member-card">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/luanda.png" alt="">
-                <span>Nom du membre</span>
+                
             </div>
 
             <div class="member-card">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/anouk.png" alt="">
-                <span>Nom du membre</span>
+                
             </div>
 
             <div class="member-card">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/marine.png" alt="">
-                <span>Nom du membre</span>
             </div>
 
             <div class="member-card">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/alice.png" alt="">
-                <span>Nom du membre</span>
             </div>
 
             <div class="member-card">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/sitini.png" alt="">
-                <span>Nom du membre</span>
             </div>
 
             <div class="member-card">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/manon.png" alt="">
-                <span>Nom du membre</span>
             </div>
 
             <div class="member-card">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/daniela.png" alt="">
-                <span>Nom du membre</span>
             </div>
 
             <div class="member-card">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/lena.png" alt="">
-                <span>Nom du membre</span>
             </div>
 
             <div class="member-card">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/kelly.png" alt="">
-                <span>Nom du membre</span>
             </div>
 
             <div class="member-card">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/louane.png" alt="">
-                <span>Nom du membre</span>
             </div>
 
             <div class="member-card">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/clelie.png" alt="">
-                <span>Nom du membre</span>
+            </div>
+
+            <div class="member-card">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/media/member-alice2.png.png" alt="">
             </div>
 
         <!-- Duplique cette carte 13 fois -->

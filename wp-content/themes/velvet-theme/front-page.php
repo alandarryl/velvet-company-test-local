@@ -67,10 +67,18 @@
         <h2>Dernières prestations</h2>
         <div class="image-pres" >
             <div class="pres-left-image" >
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/company-members.png" alt="Prestation 1">
+                <video loop muted>
+                    <source src="<?php echo get_template_directory_uri(); ?>/assets/media/pres-left-side.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/company-members.png" alt="Prestation 1"> -->
             </div>
             <div class="pres-right-image" >
-                <img src="<?php echo get_template_directory_uri(); ?>//assets/media/members/company-members.png" alt="Prestation 2">
+                <video loop muted>
+                    <source src="<?php echo get_template_directory_uri(); ?>/assets/media/pres-right-side.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- <img src="<?php echo get_template_directory_uri(); ?>//assets/media/members/company-members.png" alt="Prestation 2"> -->
             </div>
         </div>
         <a href="#" class="btn primary">EN SAVOIR PLUS</a>
