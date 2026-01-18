@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '1.0.1' );
 }
 
 /**
@@ -141,9 +141,11 @@ function velvet_theme_scripts() {
 	wp_enqueue_style( 'velvet-theme-style', get_stylesheet_uri(), array(), _S_VERSION );
 
 	wp_enqueue_style(
-	'velvet-main-style',
-	get_template_directory_uri() . '/assets/css/main.css'
-	);
+    'velvet-main-style',
+    get_template_directory_uri() . '/assets/css/main.css',
+    [],
+    time()
+);
 
 	wp_enqueue_script(
 	'velvet-main-script',
@@ -200,5 +202,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 
+function velvet_no_cache_headers() {
+    header("Cache-Control: no-cache, must-revalidate, max-age=0");
+    header("Pragma: no-cache");
+    header("Expires: Wed, 11 Jan 1984 05:00:00 GMT");
+}
+add_action('send_headers', 'velvet_no_cache_headers');
 
 

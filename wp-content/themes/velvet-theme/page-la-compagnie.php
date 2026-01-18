@@ -16,7 +16,7 @@ get_header();
             <source src="<?php echo get_template_directory_uri(); ?>/assets/media/company.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/media/hero.jpg" alt="">
+        <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/media/hero.jpg" alt=""> -->
     </section>
 
     <!-- MEMBRES -->
