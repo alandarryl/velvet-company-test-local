@@ -13,7 +13,7 @@ get_header();
     <!-- IMAGE -->
     <section class="prestation-banner">
       <h2>Nos Prestations</h2>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/media/prestations-header.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/media/prestation-header.png" alt="">
     </section>
 
   <!-- CATEGORIES -->
