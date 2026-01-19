@@ -71,7 +71,7 @@ get_header();
             </div>
 
             <div class="member-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/alice.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/media/member-alice1.png" alt="">
             </div>
 
             <div class="member-card">
