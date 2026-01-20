@@ -1,0 +1,9 @@
+.velvet-calendar-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#velvet-calendar {
+    margin-top: 20px;
+}

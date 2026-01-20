@@ -4,9 +4,11 @@ if (!defined('ABSPATH')) exit;
 
 class Velvet_Dashboard_Admin {
 
-    public function __construct() {
-        add_action('admin_menu', array($this, 'register_menu'));
-    }
+public function __construct() {
+    add_action('admin_menu', array($this, 'register_menu'));
+    add_action('admin_enqueue_scripts', array($this, 'enqueue_admin_assets'));
+}
+
 
     public function register_menu() {
         add_menu_page(
@@ -47,4 +49,36 @@ class Velvet_Dashboard_Admin {
     private function render($file) {
         include VELVET_DASHBOARD_PATH . "admin/partials/$file.php";
     }
+
+
+    public function enqueue_admin_assets($hook) {
+
+    // ne charger que sur velvet-dashboard → bookings
+    if (!isset($_GET['page']) || $_GET['page'] !== 'velvet-dashboard-bookings') {
+        return;
+    }
+
+    wp_enqueue_style(
+        'fullcalendar-css',
+        'https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/main.min.css'
+    );
+
+    wp_enqueue_script(
+        'fullcalendar-js',
+        'https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/main.min.js',
+        [],
+        null,
+        true
+    );
+
+    wp_enqueue_script(
+        'velvet-calendar',
+        VELVET_DASHBOARD_URL . 'admin/js/fullcalendar.js',
+        ['fullcalendar-js'],
+        null,
+        true
+    );
+}
+
+
 }
