@@ -28,7 +28,7 @@ get_header();
         <div class="contact-container">
 
         <!-- formulaire de contact -->
-        <form action="<?php echo admin_url('admin-post.php'); ?>" method="POST">
+        <form class="contact-form" action="<?php echo admin_url('admin-post.php'); ?>" method="POST">
             <input type="hidden" name="action" value="velvet_save_contact">
 
             <div class="you-are">
