@@ -19,3 +19,17 @@ function velvet_dashboard_init() {
     new Velvet_Dashboard();
 }
 add_action('plugins_loaded', 'velvet_dashboard_init');
+
+
+register_activation_hook(__FILE__, 'velvet_dashboard_install');
+
+function velvet_dashboard_install() {
+    require_once VELVET_DASHBOARD_PATH . 'includes/class-velvet-dashboard-install.php';
+    Velvet_Dashboard_Install::create_tables();
+}
+
+
+require_once VELVET_DASHBOARD_PATH . 'includes/class-velvet-dashboard-public.php';
+new Velvet_Dashboard_Public();
+
+
