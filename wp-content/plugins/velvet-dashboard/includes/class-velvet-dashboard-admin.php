@@ -10,6 +10,7 @@ public function __construct() {
 }
 
 
+
     public function register_menu() {
         add_menu_page(
             'Velvet Dashboard',
@@ -51,26 +52,28 @@ public function __construct() {
     }
 
 
-    public function enqueue_admin_assets($hook) {
+public function enqueue_admin_assets($hook) {
 
-    // ne charger que sur velvet-dashboard → bookings
+    // Charge seulement sur la page bookings
     if (!isset($_GET['page']) || $_GET['page'] !== 'velvet-dashboard-bookings') {
         return;
     }
 
+    // FullCalendar CSS + JS
     wp_enqueue_style(
         'fullcalendar-css',
-        'https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/main.min.css'
+        'https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css'
     );
 
     wp_enqueue_script(
         'fullcalendar-js',
-        'https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/main.min.js',
+        'https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js',
         [],
         null,
         true
     );
 
+    // Notre script calendar
     wp_enqueue_script(
         'velvet-calendar',
         VELVET_DASHBOARD_URL . 'admin/js/fullcalendar.js',
@@ -79,6 +82,7 @@ public function __construct() {
         true
     );
 }
+
 
 
 }
