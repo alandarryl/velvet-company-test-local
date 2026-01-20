@@ -7,7 +7,11 @@
 
 <!-- HERO -->
     <section class="hero">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/media/hero.jpg" alt="Velvet Company">
+        <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/media/hero.jpg" alt="Velvet Company"> -->
+        <video class="click-video" autoplay loop muted>
+                    <source src="<?php echo get_template_directory_uri(); ?>/assets/media/pres-left-side.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+        </video>
     </section>
 
     	<div class="header-cta">
