@@ -81,7 +81,38 @@ public function enqueue_admin_assets($hook) {
         null,
         true
     );
+
+
+    // Page stats
+if (isset($_GET['page']) && $_GET['page'] === 'velvet-dashboard-stats') {
+
+    wp_enqueue_script(
+        'chartjs',
+        'https://cdn.jsdelivr.net/npm/chart.js',
+        [],
+        null,
+        true
+    );
+
+    wp_enqueue_style(
+        'velvet-admin-styles',
+        VELVET_DASHBOARD_URL . 'admin/css/dashboard.css'
+    );
+
+    wp_enqueue_script(
+        'velvet-stats',
+        VELVET_DASHBOARD_URL . 'admin/js/stats.js',
+        ['chartjs'],
+        null,
+        true
+    );
+
 }
+
+
+
+}
+
 
 
 
