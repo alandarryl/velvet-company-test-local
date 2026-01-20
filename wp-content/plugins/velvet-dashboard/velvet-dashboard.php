@@ -1,0 +1,28 @@
+<?php
+/**
+ * Plugin Name: Velvet Dashboard
+ * Description: Dashboard messages + booking
+ * Author: Alan
+ * Version: 0.1
+ */
+
+if (!defined('ABSPATH')) exit; // sécurité
+
+add_action('admin_menu', 'velvetDashboard_register_menu');
+
+function velvetDashboard_register_menu() {
+    add_menu_page(
+        'Velvet Dashboard',     // titre page
+        'Velvet Dashboard',     // nom menu
+        'manage_options',       // permissions
+        'velvet-dashboard',     // slug
+        'velvetDashboard_display_page', // fonction affichage
+        'dashicons-chart-line', // icône
+        3                       // position
+    );
+}
+
+function velvetDashboard_display_page() {
+    echo '<h1>Velvet Dashboard</h1>';
+    echo '<p>Bienvenue sur le Dashboard personnalisé !</p>';
+}
