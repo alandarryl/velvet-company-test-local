@@ -28,7 +28,8 @@ get_header();
         <div class="contact-container">
 
         <!-- formulaire de contact -->
-        <form class="contact-form" method="POST" action="">
+        <form class="contact-form" method="POST">
+            <input type="hidden" name="velvet_contact_submit" value="1">
 
             <div class="you-are">
                 <label for="you-are">Vous êtes :</label>
