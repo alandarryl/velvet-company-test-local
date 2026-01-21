@@ -26,14 +26,14 @@
     <section class="home-intro">
         <div class="intro-grid" >
             <div class="intro-text">
-                <h2>Qui Sommes Nous ?</h2>
+                <h2>Qui Sommes-nous ?</h2>
                 <p>
                 Velvet Company est une compagnie de danse contemporaine qui crée des univers sensibles et visuels, 
                 où le mouvement raconte des histoires. Nous imaginons des pièces poétiques et engageantes, 
                 pensées pour toucher chaque spectateur au coeur.
                 </p>
                 <a href="#" class="btn secondary">
-                    Découvrir la compagnie
+                    DECOUVRIR LA COMPAGNIE
                 </a>
             </div>
             <div class="intro-image">
@@ -71,7 +71,7 @@
     </section> -->
 
     <section class="section-pres" >
-        <h2>Dernières prestations</h2>
+        <h2>Derniers projets</h2>
         <div class="image-pres" >
             <div class="pres-left-image" >
                 <video class="click-video" loop muted>
