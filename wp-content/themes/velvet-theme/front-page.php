@@ -4,104 +4,88 @@
 
 <div id="top"></div>
 
-
 <!-- HERO -->
-    <section class="hero">
-        <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/media/hero.jpg" alt="Velvet Company"> -->
-        <video class="click-video" autoplay loop muted>
-                    <source src="<?php echo get_template_directory_uri(); ?>/assets/media/pres-left-side.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-        </video>
-    </section>
+<section class="hero">
+    <?php
+    if ( has_post_thumbnail() ) {
+        the_post_thumbnail( 'full', ['class' => 'hero-media'] );
+    } else {
+        // fallback Gutenberg — YouTube / video block
+        echo '<div class="hero-media">';
+        the_content(); // Gutenberg contiendra la vidéo ici
+        echo '</div>';
+    }
+    ?>
+</section>
 
-    	<div class="header-cta">
-            <h2 class="banner-branding">
-                <span>VELVET</span>
-                <span>COMPANY</span>
-            </h2>
-			<a href="#" class="btn primary">DECOUVREZ NOTRE UNIVERS</a>
-		</div>
+<!-- CTA hero -->
+<div class="header-cta">
+    <h2 class="banner-branding">
+        <?php 
+        // Titre hero depuis Gutenberg (H1 ou H2)
+        echo get_post_field('post_title', get_the_ID());
+        ?>
+    </h2>
 
-        <!-- INTRO -->
-    <section class="home-intro">
-        <div class="intro-grid" >
-            <div class="intro-text">
-                <h2>Qui Sommes-nous ?</h2>
-                <p>
-                Velvet Company est une compagnie de danse contemporaine qui crée des univers sensibles et visuels, 
-                où le mouvement raconte des histoires. Nous imaginons des pièces poétiques et engageantes, 
-                pensées pour toucher chaque spectateur au coeur.
-                </p>
-                <a href="#" class="btn secondary">
-                    DECOUVRIR LA COMPAGNIE
-                </a>
-            </div>
-            <div class="intro-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/company-members.png" alt="Velvet Company Intro">
-            </div>
-        </div>
-    </section>
+    <?php
+    // Bloc bouton Gutenberg dans le contenu
+    // Yoast friendly
+    ?>
+</div>
 
-    <!--- latest PROJECTS -->
-    <!-- <section class="home-projects">
-        <h2>Nos Projets Récents</h2>
-        <div class="projects-grid">
+
+<!-- SECTION INTRO (Qui sommes-nous ?) -->
+<section class="home-intro">
+    <div class="intro-grid">
+        <div class="intro-text">
             <?php
-            $args = array(
-                'post_type' => 'project',
-                'posts_per_page' => 3,
-            );
-            $projects = new WP_Query($args);
-            if ($projects->have_posts()) :
-                while ($projects->have_posts()) : $projects->the_post(); ?>
-                    <div class="project-item">
-                        <?php if (has_post_thumbnail()) : ?>
-                            <a href="<?php the_permalink(); ?>">
-                                <?php the_post_thumbnail('medium'); ?>
-                                <h3><?php the_title(); ?></h3>
-                            </a>
-                        <?php endif; ?>
-                    </div>
-                <?php endwhile;
-                wp_reset_postdata();
-            else : ?>
-                <p>Aucun projet trouvé.</p>
-            <?php endif; ?>
+            // Ici le client mettra un H2 + paragraphe + bouton
+            the_content(); 
+            ?>
         </div>
-    </section> -->
 
-    <section class="section-pres" >
-        <h2>Derniers projets</h2>
-        <div class="image-pres" >
-            <div class="pres-left-image" >
-                <video class="click-video" loop muted>
-                    <source src="<?php echo get_template_directory_uri(); ?>/assets/media/pres-left-side.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/media/members/company-members.png" alt="Prestation 1"> -->
-            </div>
-            <div class="pres-right-image" >
-                <video class="click-video" loop muted>
-                    <source src="<?php echo get_template_directory_uri(); ?>/assets/media/pres-right-side.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <!-- <img src="<?php echo get_template_directory_uri(); ?>//assets/media/members/company-members.png" alt="Prestation 2"> -->
-            </div>
+        <div class="intro-image">
+            <?php
+            // Image via Gutenberg
+            if ( has_post_thumbnail() ) {
+                the_post_thumbnail('large');
+            }
+            ?>
         </div>
-        <a href="#" class="btn primary">EN SAVOIR PLUS</a>
-    </section>
-
-    <a href="#top">
-    <!-- ton SVG ici -->
-        <svg class="scroll-icon" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M43.613 35.3865C43.7843 35.5483 43.9857 35.6748 44.2059 35.7588C44.4261 35.8428 44.6606 35.8826 44.8961 35.8759C45.1317 35.8693 45.3636 35.8163 45.5786 35.72C45.7937 35.6237 45.9877 35.486 46.1495 35.3147C46.3113 35.1435 46.4378 34.942 46.5218 34.7219C46.6058 34.5017 46.6456 34.2672 46.6389 34.0316C46.6323 33.7961 46.5793 33.5642 46.483 33.3491C46.3867 33.1341 46.249 32.9401 46.0777 32.7783L29.9334 17.5309C29.6004 17.216 29.1594 17.0405 28.7011 17.0405C28.2427 17.0405 27.8018 17.216 27.4687 17.5309L11.3226 32.7783C11.1476 32.939 11.0063 33.133 10.9068 33.3488C10.8074 33.5647 10.7519 33.7981 10.7434 34.0356C10.735 34.2731 10.7738 34.5099 10.8577 34.7323C10.9415 34.9546 11.0687 35.1581 11.2319 35.3309C11.395 35.5036 11.5909 35.6423 11.8081 35.7387C12.0253 35.8352 12.2595 35.8875 12.4971 35.8927C12.7346 35.8979 12.9709 35.8558 13.1921 35.7689C13.4133 35.682 13.615 35.552 13.7855 35.3865L28.7011 21.3015L43.613 35.3865Z" fill="#FBF6F6"/>
-            <circle cx="29" cy="29" r="27" stroke="#FBF6F6" stroke-width="4"/>
-        </svg>
-    </a>
+    </div>
+</section>
 
 
+<!-- SECTION PROJETS -->
+<section class="section-pres">
+    <h2><?php echo esc_html__('Derniers projets', 'velvet'); ?></h2>
+
+    <div class="image-pres">
+        <div class="pres-left-image">
+            <?php
+            // Inserer une vidéo ou image via Gutenberg
+            // Flex 1
+            ?>
+        </div>
+
+        <div class="pres-right-image">
+            <?php
+            // Flex 2
+            ?>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <a href="#" class="btn primary">EN SAVOIR PLUS</a>
+</section>
 
 
+<!-- SCROLL TOP -->
+<a href="#top">
+    <svg class="scroll-icon" width="58" height="58" viewBox="0 0 58 58">
+        <path d="..."/>
+    </svg>
+</a>
 
 </main>
 
