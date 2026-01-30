@@ -4,80 +4,28 @@
 
 <div id="top"></div>
 
-<!-- HERO -->
-<section class="hero">
-    <?php
-    if ( has_post_thumbnail() ) {
-        the_post_thumbnail( 'full', ['class' => 'hero-media'] );
-    } else {
-        // fallback Gutenberg — YouTube / video block
-        echo '<div class="hero-media">';
-        the_content(); // Gutenberg contiendra la vidéo ici
-        echo '</div>';
-    }
-    ?>
-</section>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<!-- CTA hero -->
-<div class="header-cta">
-    <h2 class="banner-branding">
-        <?php 
-        // Titre hero depuis Gutenberg (H1 ou H2)
-        echo get_post_field('post_title', get_the_ID());
+    <!-- HERO -->
+    <section class="hero">
+        <?php
+        if ( has_post_thumbnail() ) {
+            the_post_thumbnail('full', ['class' => 'hero-media']);
+        }
         ?>
-    </h2>
+    </section>
 
-    <?php
-    // Bloc bouton Gutenberg dans le contenu
-    // Yoast friendly
-    ?>
-</div>
-
-
-<!-- SECTION INTRO (Qui sommes-nous ?) -->
-<section class="home-intro">
-    <div class="intro-grid">
-        <div class="intro-text">
-            <?php
-            // Ici le client mettra un H2 + paragraphe + bouton
-            the_content(); 
-            ?>
-        </div>
-
-        <div class="intro-image">
-            <?php
-            // Image via Gutenberg
-            if ( has_post_thumbnail() ) {
-                the_post_thumbnail('large');
-            }
-            ?>
-        </div>
-    </div>
-</section>
-
-
-<!-- SECTION PROJETS -->
-<section class="section-pres">
-    <h2><?php echo esc_html__('Derniers projets', 'velvet'); ?></h2>
-
-    <div class="image-pres">
-        <div class="pres-left-image">
-            <?php
-            // Inserer une vidéo ou image via Gutenberg
-            // Flex 1
-            ?>
-        </div>
-
-        <div class="pres-right-image">
-            <?php
-            // Flex 2
-            ?>
-        </div>
+    <!-- CTA HERO -->
+    <div class="header-cta">
+        <h2 class="banner-branding"><?php the_title(); ?></h2>
     </div>
 
-    <!-- CTA -->
-    <a href="#" class="btn primary">EN SAVOIR PLUS</a>
-</section>
+    <!-- CONTENU GUTENBERG -->
+    <section class="home-content">
+        <?php the_content(); ?>
+    </section>
+
+<?php endwhile; endif; ?>
 
 
 <!-- SCROLL TOP -->
